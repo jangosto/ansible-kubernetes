@@ -89,3 +89,8 @@
     weekday: "{{ item.schedule[4] }}"
   with_items: "{{ docker_cron_tasks }}"
   when: docker_cron_tasks
+
+- name: "get docker info"
+  shell: docker info
+  register: docker_info
+  changed_when: False
