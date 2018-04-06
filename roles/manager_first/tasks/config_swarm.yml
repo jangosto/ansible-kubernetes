@@ -1,5 +1,0 @@
----
-
-- name: "create primary swarm manager"
-  shell: docker swarm init --advertise-addr {{ ansible_eth0['ipv4']['address'] }}
-  when: "docker_info.stdout.find('Swarm: inactive') != -1"
