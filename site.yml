@@ -1,0 +1,22 @@
+---
+
+- name: Create kubernetes cluster
+  hosts: all
+  remote_user: root
+  gather_facts: True
+  roles:
+    - common
+
+- name: Create kubernetes master host
+  hosts: master
+  remote_user: root
+  gather_facts: True
+  roles:
+    - master
+
+- name: Create kubernetes node host
+  hosts: node
+  remote_user: root
+  gather_facts: True
+  roles:
+    - node

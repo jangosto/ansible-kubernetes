@@ -1,0 +1,7 @@
+---
+
+include_tasks: install_dependencies.yml
+include_tasks: setup_hostname_and_ip.yml
+include_tasks: install_docker.yml
+include_tasks: install_kubernetes.yml
+include_tasks: remove_dependencies.yml

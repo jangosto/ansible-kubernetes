@@ -1,0 +1,7 @@
+[master]
+192.168.1.101 hostname=master1 ip=192.168.1.101
+
+[node]
+192.168.1.111 hostname=node1 ip=192.168.1.111
+192.168.1.112 hostname=node2 ip=192.168.1.112
+192.168.1.113 hostname=node3 ip=192.168.1.113
